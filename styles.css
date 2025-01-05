@@ -1,26 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Изменен шрифт */
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: rgb(31, 31, 37); /* Темный синеватый фон */
-    color: white; /* Цвет текста */
+    background-color: #1e1e2f; /* Темный фон с более глубоким цветом */
+    color: #eaeaea; /* Светлый цвет текста для лучшей читаемости */
 }
 
 video {
     width: 100%; /* Занимает 100% ширины родительского контейнера */
     height: auto; /* Автоматическая высота для сохранения пропорций */
     max-width: 600px; /* Максимальная ширина видео */
-    border-radius: 8px; /* Закругленные углы для видео */
+    border-radius: 10px; /* Закругленные углы для видео */
     transition: box-shadow 0.5s; /* Плавный переход для тени */
 }
 
 h1 {
     margin-bottom: 20px; /* Отступ снизу для заголовка */
+    font-size: 2em; /* Увеличен размер шрифта заголовка */
 }
 
 p {
     margin-top: 20px; /* Отступ сверху для текста */
+    line-height: 1.6; /* Увеличенный межстрочный интервал для удобства чтения */
 }
 
 .article-container {
@@ -30,6 +32,24 @@ p {
     max-width: 800px; /* Максимальная ширина контейнера */
     margin: 20px auto; /* Центрирование контейнера */
     animation: glowing 6s infinite alternate; /* Увеличенная длительность анимации */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Легкая тень для контейнера */
+}
+
+.button {
+    display: inline-block; /* Отображение как блочный элемент */
+    margin: 20px auto; /* Центрирование кнопки */
+    padding: 15px 30px; /* Отступ внутри кнопки */
+    background-color: rgb(0, 123, 255); /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 10px; /* Закругленные углы для кнопки */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход цвета фона и трансформации */
+    font-size: 1.2em; /* Увеличенный размер шрифта кнопки */
+}
+
+.button:hover {
+    background-color: rgb(0, 100, 200); /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
 }
 
 /* Анимация радужного сияния с плавными переходами */
