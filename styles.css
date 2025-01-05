@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(31, 31, 37); /* Темный синеватый фон */
+    color: white; /* Цвет текста */
+}
+
+video {
+    width: 100%; /* Занимает 100% ширины родительского контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 600px; /* Максимальная ширина видео */
+    border-radius: 8px; /* Закругленные углы для видео */
+    transition: box-shadow 0.5s; /* Плавный переход для тени */
+}
+
+h1 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+p {
+    margin-top: 20px; /* Отступ сверху для текста */
+}
+
+.article-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Прозрачный белый фон */
+    border-radius: 10px; /* Закругленные углы для контейнера */
+    padding: 20px; /* Отступ внутри контейнера */
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto; /* Центрирование контейнера */
+    animation: glowing 6s infinite alternate; /* Увеличенная длительность анимации */
+}
+
+/* Анимация радужного сияния с плавными переходами */
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 20px rgb(19, 9, 209), 0 0 30px rgba(3, 84, 113, 0.7);
+    }
+    14% {
+        box-shadow: 0 0 20px rgb(1, 33, 78), 0 0 30px rgba(56, 144, 227, 0.7);
+    }
+    28% {
+        box-shadow: 0 0 20px rgb(15, 1, 56), 0 0 30px rgba(4, 39, 234, 0.7);
+    }
+    42% {
+        box-shadow: 0 0 20px rgba(13, 6, 208, 0.368), 0 0 30px rgba(0, 55, 255, 0.7);
+    }
+    57% {
+        box-shadow: 0 0 20px rgb(37, 3, 234), 0 0 30px rgba(53, 6, 221, 0.7);
+    }
+    71% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.7);
+    }
+    85% {
+        box-shadow: 0 0 20px rgba(75, 0, 130, 1), 0 0 30px rgba(75, 0, 130, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(8, 64, 218), 0 0 30px rgba(5, 39, 118, 0.7);
+    }
+}
